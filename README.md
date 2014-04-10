@@ -46,20 +46,17 @@ The following pin mapping is for arduino duemilanove/uno/standlone AVR chips. (P
 Arduino Mega/Due are NOT SUPPORTED this sketch.
 
 ----------------------------------------------------------
-	arduino(in serialLCD module)pins      LCD pins
-----------------------------------------------------------
-						9(PWM)          15(LED brightness control)
-						10              D7
-						11              D6
-						12              D5
-						13              D4
-						A3              RS
-						A2              R/W
-						A1              E
-----------------------------------------------------------
+	ATmega8 pins      	LCD pins
 
-----------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------
+		9(PWM)          15(LED brightness control)
+		10              D7
+		11              D6
+		12              D5
+		13              D4
+		A3              RS
+		A2              R/W
+		A1              E
+----------------------------------------------------------
 
 FOR ARDUINO:
 -------------
