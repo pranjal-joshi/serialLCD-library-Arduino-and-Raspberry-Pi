@@ -1,6 +1,9 @@
 Project : Serial LCD module(ATmega8 at 8Mhz internal osc. (no-xtal bootloader)).
+
 Author  : Pranjal Joshi
+
 Date    : 7-12-2013
+
 License : GNU GPL v2 (Relased in public domain as open-source).
 
 This is open-source hardware & software. Feel free to edit/improve/share/use it.
