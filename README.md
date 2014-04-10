@@ -17,6 +17,7 @@ copy this folder into arduino/hardware/arduino/bootloader
 restart arduino IDE.
 
 For 1st time:
+
 1. burn arduinoISP sketch (given in File->Example->ArduinoISP) into your arduino.
 2. connect atmega8 to arduino through SPI. google it if you are burning bootloader for 1st time.
 3. Now in arduino IDE->tools->Board & select atmega8-noxtal.
@@ -24,7 +25,8 @@ For 1st time:
 5. opne Firmware-8/168/328.ino file in arduino IDE, select board as atmega8-noxal.
 6. Goto file->Upload using programmer (I assumed that your arduino contains arduinoISP sketch..)
 7. Congrats..! Firmware file is loaded into your ATmega8.
-(Tf you wish to use atmega168/328, you must choose proper bootloader & Board before uploading. Sketch is compatible with all these microcontrollers.)
+(If you wish to use atmega168/328, you must choose proper bootloader & Board before uploading. Sketch is compatible with all these microcontrollers.)
+
 ---- No Need to burn Firmware & bootloader every time. It requires only for 1st time ----
 ----------------------------------------------------------------------------------------
 Firmware File:
