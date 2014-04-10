@@ -1,11 +1,27 @@
-
 Project : Serial LCD module(ATmega8 at 8Mhz internal osc. (no-xtal bootloader)).
 Author  : Pranjal Joshi
 Date    : 7-12-2013
 License : GNU GPL v2 (Relased in public domain as open-source).
 
 This is open-source hardware & software. Feel free to edit/improve/share/use it.
+------------------------------------------------------------------------
+atmega8_noxtal:
 
+This is a bootloader for ATmega8 to run @ 8Mhz internal osc. (This bootloader is not written by me.)
+
+copy this folder into arduino/hardware/arduino/bootloader
+restart arduino IDE.
+
+For 1st time:
+1. burn arduinoISP sketch (given in File->Example->ArduinoISP) into your arduino.
+2. connect atmega8 to arduino through SPI. google it if you are burning bootloader for 1st time.
+3. Now in arduino IDE->tools->Board & select atmega8-noxtal.
+4. Now burn bootloader, Tools->Burn bootloader. If your connections are ok then bootloader will be loaded without any error.
+5. opne Firmware-8/168/328.ino file in arduino IDE, select board as atmega8-noxal.
+6. Goto file->Upload using programmer (I assumed that your arduino contains arduinoISP sketch..)
+7. Congrats..! Firmware file is loaded into your ATmega8.
+(Tf you wish to use atmega168/328, you must choose proper bootloader & Board before uploading. Sketch is compatible with all these microcontrollers.)
+---- No Need to burn Firmware & bootloader every time. It requires only for 1st time ----
 ----------------------------------------------------------------------------------------
 Firmware File:
 
@@ -13,9 +29,8 @@ The Firmware file contains a sketch for slave/UART to LCD Controller ATmega8/168
 
 Hardware Overview:
  
- 
 Serial port at 9600 baudrate.
-The following pin mapping is for arduino duemilanove/uno/standlone AVR chips.
+The following pin mapping is for arduino duemilanove/uno/standlone AVR chips. (Please see pin mapping given image.)
 Arduino Mega/Due are NOT SUPPORTED this sketch.
 ----------------------------------------------------------
 	arduino pins      LCD pins
@@ -32,6 +47,9 @@ Arduino Mega/Due are NOT SUPPORTED this sketch.
 
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
+
+---*** FOR ARDUINO ***---
+
 serialLCD folder:
 
 The serialLCD folder is arduino library. Copy this folder in arduino/libraries & restart arduino
@@ -47,3 +65,22 @@ file but you can use SoftwareSerial as usual if you want.
 Arduino 6(tx) ---> LCD Rx
 Arduino 7(rx) ---> NO USE (can be left floating/un-connected)
 -----------------------------------------------------------------------------------------
+
+--- *** FOR RASPBERRY PI ***---
+
+Raspberry Pi Python Module for serialLCD using ATmega8 (arduino compatible)
+Type:	Module/python File
+Author: Pranjal Joshi
+Date:	13-12-2013
+License:GNU GPL v2 (Relased in public domain as open-source).
+
+----------------------------- NOTE -----------------------------------
+
+1. Please make sure that serialLCD.py file is in the same folder/directory where you are creating your python source file.
+2. serialLCD.pyc file will be generated automatically.
+3. Possible Reasons of error are:
+	a. You didn't installed requied python libraries.
+	b. the serialLCD.py file is not in same directory of source file.
+4. This project is still under development. So to report any bug please contact me at joshi.pranjal5@gmail.com
+
+----------------------------------------------------------------------

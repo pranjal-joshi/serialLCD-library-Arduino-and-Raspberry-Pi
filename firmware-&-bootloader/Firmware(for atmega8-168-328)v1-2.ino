@@ -66,6 +66,9 @@ void loop()
     c = (char)Serial.read();	//get next char
     switch(c)					//decode the input command
     {
+	  case '$':
+		lcd.print('$');
+		break;
       case '0':
         reset();
         break;
