@@ -1,0 +1,16 @@
+serialLCD	KEYWORD1
+reset	KEYWORD2
+clear	KEYWORD2
+displayOn	KEYWORD2
+displayOff	KEYWORD2
+cursorOn	KEYWORD2
+cursorOff	KEYWORD2
+cursorBlink	KEYWORD2
+cursorNoBlink	KEYWORD2
+scrollLeft	KEYWORD2
+scrollRight	KEYWORD2
+setCursor	KEYWORD2
+backLight	KEYWORD2
+print	KEYWORD2
+println	KEYWORD2
+printNum	KEYWORD2
