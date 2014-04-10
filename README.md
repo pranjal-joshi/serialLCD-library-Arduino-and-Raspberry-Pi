@@ -7,6 +7,7 @@ Date    : 7-12-2013
 License : GNU GPL v2 (Relased in public domain as open-source).
 
 This is open-source hardware & software. Feel free to edit/improve/share/use it.
+
 ------------------------------------------------------------------------
 atmega8_noxtal:
 
@@ -35,6 +36,7 @@ Hardware Overview:
 Serial port at 9600 baudrate.
 The following pin mapping is for arduino duemilanove/uno/standlone AVR chips. (Please see pin mapping given image.)
 Arduino Mega/Due are NOT SUPPORTED this sketch.
+
 ----------------------------------------------------------
 	arduino pins      LCD pins
 ----------------------------------------------------------
@@ -66,6 +68,7 @@ file but you can use SoftwareSerial as usual if you want.
 (The pin 6,7 on arduino are used by this library.)
 
 Arduino 6(tx) ---> LCD Rx
+-----------------------------------------------------------------------------------------
 Arduino 7(rx) ---> NO USE (can be left floating/un-connected)
 -----------------------------------------------------------------------------------------
 
