@@ -8,7 +8,7 @@ License : GNU GPL v2 (Relased in public domain as open-source).
 
 This is open-source hardware & software. Feel free to edit/improve/share/use it.
 
-Instruction to build serialLCD:
+Instructions to build serialLCD:
 -------------------------
 
 ------------------------------------------------------------------------
