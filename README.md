@@ -73,7 +73,9 @@ file but you can use SoftwareSerial as usual if you want.
 
 (The pin 6,7 on arduino are used by this library.)
 
-Arduino 6(tx) ---> LCD Rx (2nd pin of microcontroller IC in serialLCD module or DigitalPin 1 according to arduino map)
+-----------------------------------------------------------------------------------------
+Arduino 6(tx) ---> LCD Rx (2nd pin of ATmega8)
+-----------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------
 Arduino 7(rx) ---> NO USE (can be left floating/un-connected)
 -----------------------------------------------------------------------------------------
