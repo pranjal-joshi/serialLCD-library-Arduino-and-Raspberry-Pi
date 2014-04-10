@@ -8,7 +8,7 @@ License : GNU GPL v2 (Relased in public domain as open-source).
 
 This is open-source hardware & software. Feel free to edit/improve/share/use it.
 
-Instruction for Arduino:
+Instruction to build serialLCD:
 -------------------------
 
 ------------------------------------------------------------------------
@@ -19,7 +19,7 @@ This is a bootloader for ATmega8 to run @ 8Mhz internal osc. (This bootloader is
 copy this folder into arduino/hardware/arduino/bootloader
 restart arduino IDE.
 
----*** FOR Micrcontroller in serialLCD module ***---
+---*** FOR ATmega8 in serialLCD module ***---
 
 ---*** Only For 1st time:
 
@@ -34,7 +34,7 @@ restart arduino IDE.
 
 Firmware File:
 
-The Firmware file contains a sketch for slave/UART to LCD Controller ATmega8/168/328. (Burn this sketch to micrcontroller in serialLCD module.)
+The Firmware file contains a sketch for slave/UART to LCD Controller ATmega8/168/328. (Burn this sketch to ATmega8 in serialLCD module.)
 
 ---- No Need to burn Firmware & bootloader every time. It requires only for 1st time ----
 ----------------------------------------------------------------------------------------
@@ -61,7 +61,8 @@ Arduino Mega/Due are NOT SUPPORTED this sketch.
 ----------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------
 
----*** FOR ARDUINO (MASTER Controller that uses serialLCD.h) ***---
+FOR ARDUINO:
+-------------
 
 serialLCD folder:
 
