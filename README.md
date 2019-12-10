@@ -1,5 +1,5 @@
-## This Project is not actively maintained anymore! But the code and schematics will work for sure if you clone them.
-## Contribution for new library features will be welcomed.
+### This Project is not maintained. But the code and schematics will work for sure if you clone them.
+### Contribution for new library features will be welcomed.
 
 Project : Serial LCD module(ATmega8 at 8Mhz internal osc. (no-xtal bootloader)).
 Author  : Pranjal Joshi
