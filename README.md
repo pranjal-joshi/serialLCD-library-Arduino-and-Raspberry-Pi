@@ -8,8 +8,10 @@ License : GNU GPL v2 (Relased in public domain as open-source).
 
 This is open-source hardware & software. Feel free to edit/improve/share/use it.
 
-Instructions to build serialLCD:
+## Instructions to build serialLCD:
 -------------------------
+
+[alt text](https://raw.githubusercontent.com/pranjal-joshi/serialLCD-library-Arduino-and-Raspberry-Pi/master/Arduino-Library/serialLCD%20schematic.jpg "Schematic")
 
 ------------------------------------------------------------------------
 atmega8_noxtal:
